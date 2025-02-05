@@ -48,9 +48,9 @@ class Product {
 Future<List<Product>> fetchProducts() async {
   // Replace YOUR_STORE_NAME and YOUR_TOKEN_HERE with your actual Shopify details.
   final url =
-      "https://YOUR_STORE_NAME.myshopify.com/admin/api/2023-10/products.json?limit=10";
+      "https://b4a455-7a.myshopify.com/admin/api/2023-10/products.json?limit=10";
   final response = await http.get(Uri.parse(url), headers: {
-    "X-Shopify-Access-Token": "YOUR_TOKEN_HERE",
+    "X-Shopify-Access-Token": "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",
     "Content-Type": "application/json"
   });
   if (response.statusCode == 200) {
